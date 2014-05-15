@@ -1,0 +1,23 @@
+<template name="auleDocs">
+<div id="accordion" class="panel-group">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title"><a href="#auleDocs" data-toggle="collapse" data-parent="accordion">Aule Console Docs</a></h4>
+        </div>
+        <div id="auleDocs" class="panel-collapse collapse">
+            <div class="panel-body">
+                <p>Within the browser console, Aule provides an API in the global namespace <code>Aule</code>:</p>
+
+                <h4><code>addCollection(collectionName)</code></h4>
+                <p>Adds a collection named <code>collectionName</code>, and registers it as <code>Aule.collectionName</code> and <code>window.collectionName</code>.</p>
+
+                <h4><code>initializeCollections()</code></h4>
+                <p>Registers all previously created collections by name on <code>Aule</code> and <code>window</code>.</p>
+
+                <p>Aule also places a collection named <code>Collections</code> on the global scope. This collection contains the metadata (e.g. names) of all current collections.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</template>

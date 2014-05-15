@@ -1,0 +1,31 @@
+<head>
+    <title>Aule</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Aule Collections</h1>
+        {{> auleDocs}}
+        {{> addCollection}}
+        {{> collectionList}}
+    </div>
+</body>
+
+<template name="collectionList">
+    <h3>Current Collections</h3>
+    <button class="btn btn-default initializeCollections" type="button">Initialize Collections</button>
+    <ul>
+        {{#each collections}}<li>{{name}}</li>{{/each}}
+    </ul>
+</template>
+
+<template name="addCollection">
+    <h3>Add Collection</h3>
+    <form class="form-inline" role="form">
+        <div class="form-group">
+            <label class="sr-only" for="collectionName">Collection Name</label>
+            <input class="form-control" type="text" name="collectionName" placeholder="Collection Name">
+        </div>
+        <button class="btn btn-default" type="submit">Add Collection</button>
+    </form>
+</template>
